@@ -48,7 +48,9 @@ section.about .container,
 .our-services .container,
 .counter .container,
 .feedback .container,
-.blog .container {
+.blog .container,
+.contact-us .container,
+footer .container {
   width: 75%;
   margin: auto;
   padding: 4% 0;
@@ -60,10 +62,12 @@ section.about .container,
   margin: auto;
   padding: 4% 0;
 }
+
 /* Three Lines Under Sections Title */
 .our-services .container .our-services-title h2,
 .our-portfolio .container .our-portfolio-title h2,
-.blog .container .blog-title h2 {
+.blog .container .blog-title h2,
+.contact-us .container .contact-us-title h2 {
   font-size: 30px;
   font-weight: bold;
   position: relative;
@@ -73,7 +77,8 @@ section.about .container,
 
 .our-services .container .our-services-title h2::after,
 .our-portfolio .container .our-portfolio-title h2::after,
-.blog .container .blog-title h2::after {
+.blog .container .blog-title h2::after,
+.contact-us .container .contact-us-title h2::after {
   content: "";
   position: absolute;
   bottom: 16%;
@@ -82,9 +87,11 @@ section.about .container,
   width: 130px;
   border-top: 1px solid var(--main-color);
 }
+
 .our-services .container .our-services-title h2::before,
 .our-portfolio .container .our-portfolio-title h2::before,
-.blog .container .blog-title h2::before {
+.blog .container .blog-title h2::before,
+.contact-us .container .contact-us-title h2::before {
   content: "";
   position: absolute;
   bottom: 8%;
@@ -95,7 +102,9 @@ section.about .container,
   border-top: 1px solid var(--main-color);
   border-bottom: 1px solid var(--main-color);
 }
+/* Three Lines Under Sections Title */
 
+/* Reset For a & ul Tags */
 a {
   text-decoration: none;
 }
@@ -703,13 +712,13 @@ header .header-content .animated p {
 
 /* 
 ============================================================
-                    End Feedback
+                        End Feedback
 ============================================================
 */
 
 /* 
 ============================================================
-                    Start Blog
+                        Start Blog
 ============================================================
 */
 
@@ -787,6 +796,124 @@ header .header-content .animated p {
 
 /* 
 ============================================================
-                    End Blog
+                        End Blog
+============================================================
+*/
+
+/* 
+============================================================
+                      Start Contact-US
+============================================================
+*/
+
+.contact-us .container .contact-us-title {
+  text-align: center;
+}
+
+.contact-us .container form {
+  /* background-color: red; */
+  /* border: 1px solid #ff305b; */
+  width: 75%;
+  margin: auto;
+}
+
+.contact-us .container form input,
+.contact-us .container textarea {
+  display: block;
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  font-size: 17px;
+  outline: none;
+  border: 1px solid #333;
+  border-radius: 8px;
+  color: var(--main-color);
+}
+
+.contact-us .container form .name-email > input:first-child {
+  float: left;
+  width: calc(98% / 2);
+}
+
+.contact-us .container form .name-email > input:last-child {
+  float: right;
+  width: calc(98% / 2);
+  text-transform: lowercase;
+}
+
+.contact-us .container textarea {
+  resize: none;
+}
+
+.contact-us .container button {
+  font-size: 17px;
+  padding: 10px 8px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--main-color);
+}
+
+.contact-us .container button a {
+  color: var(--white-color);
+  text-transform: capitalize;
+}
+
+/* 
+============================================================
+                      End Contact-US
+============================================================
+*/
+
+/* 
+============================================================
+                      Start Footer-bottom
+============================================================
+*/
+
+footer {
+  background-color: #333;
+}
+
+footer .container .footer-content {
+  text-align: center;
+}
+
+footer .container .footer-content .social {
+  padding-bottom: 20px;
+}
+
+footer .container .footer-content .social a {
+  display: inline-block;
+  vertical-align: baseline;
+  width: 45px;
+  height: 45px;
+  font-size: 24px;
+  padding-top: 8px;
+  background-color: var(--main-color);
+  color: var(--white-color);
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+footer .container .footer-content .social a:hover {
+  background-color: red;
+}
+
+footer .container .footer-content p {
+  color: var(--white-color);
+  font-size: 18px;
+}
+
+footer .container .footer-content p > a {
+  color: var(--main-color);
+}
+
+footer .container .footer-content p > a:hover {
+  text-decoration: underline;
+}
+
+/* 
+============================================================
+                      End Footer-bottom
 ============================================================
 */
