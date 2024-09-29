@@ -7,6 +7,7 @@
 body {
   font-family: "Source Code Pro", monospace;
   text-transform: capitalize;
+  position: relative;
 }
 
 :root {
@@ -31,7 +32,12 @@ header nav .container::after,
 header nav .nav-links::after,
 section.about .container::after,
 .about .container .info ul::after,
-.our-services .container .our-services-info::after {
+.our-services .container .our-services-info::after,
+.our-portfolio .container .portfolio-info .gallery::after,
+.our-portfolio .container .portfolio-info::after,
+.counter .container::after,
+.feedback .container .card .card-content::after,
+.blog .container::after {
   content: "";
   display: block;
   clear: both;
@@ -39,10 +45,55 @@ section.about .container::after,
 
 /* Align Containers */
 section.about .container,
-.our-services .container {
+.our-services .container,
+.counter .container,
+.feedback .container,
+.blog .container {
+  width: 75%;
+  margin: auto;
+  padding: 4% 0;
+}
+
+.our-services .container,
+.our-portfolio .container {
   width: 70%;
   margin: auto;
   padding: 4% 0;
+}
+/* Three Lines Under Sections Title */
+.our-services .container .our-services-title h2,
+.our-portfolio .container .our-portfolio-title h2,
+.blog .container .blog-title h2 {
+  font-size: 30px;
+  font-weight: bold;
+  position: relative;
+  padding-bottom: 30px;
+  margin-bottom: 40px;
+}
+
+.our-services .container .our-services-title h2::after,
+.our-portfolio .container .our-portfolio-title h2::after,
+.blog .container .blog-title h2::after {
+  content: "";
+  position: absolute;
+  bottom: 16%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 130px;
+  border-top: 1px solid var(--main-color);
+}
+.our-services .container .our-services-title h2::before,
+.our-portfolio .container .our-portfolio-title h2::before,
+.blog .container .blog-title h2::before {
+  content: "";
+  position: absolute;
+  bottom: 8%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 10px;
+  width: 90px;
+  border-top: 1px solid var(--main-color);
+  border-bottom: 1px solid var(--main-color);
 }
 
 a {
@@ -397,45 +448,17 @@ header .header-content .animated p {
   background-color: #f1f1f1;
   text-align: center;
 }
-.our-services .container {
-  width: 80%;
-}
+
+/* .our-services .container{
+  width: 90%;
+} */
 
 .our-services .container .our-services-info .services {
   float: left;
-  padding: 20px;
+  padding: 8px;
   width: calc(100% / 4);
   cursor: default;
   transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
-}
-
-.our-services .container .our-services-title h2{
-  font-size: 30px;
-  font-weight: bold;
-  position: relative;
-  padding-bottom: 30px;
-  margin-bottom: 40px;
-}
-
-.our-services .container .our-services-title h2::after{
-  content: "";
-  position: absolute;
-  bottom: 16%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 130px;
-  border-top: 1px solid var(--main-color);
-}
-.our-services .container .our-services-title h2::before{
-  content: "";
-  position: absolute;
-  bottom: 8%;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 10px;
-  width: 90px;
-  border-top: 1px solid var(--main-color);
-  border-bottom: 1px solid var(--main-color);
 }
 
 .our-services .container .our-services-info .services:hover {
@@ -476,11 +499,294 @@ header .header-content .animated p {
                     Start Portfolio
 ============================================================
 */
+.our-portfolio .container .our-portfolio-title {
+  text-align: center;
+}
 
+.our-portfolio .container .our-portfolio-title ul li {
+  display: inline-block;
+  padding: 10px 5px;
+}
 
+.our-portfolio .container .our-portfolio-title ul li a {
+  color: #333;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: var(--white-transparent);
+}
+
+.our-portfolio .container .our-portfolio-title ul li:first-child a {
+  color: var(--main-color);
+}
+
+.our-portfolio .container .portfolio-info .gallery .item {
+  float: left;
+  width: calc(90% / 3);
+  font-size: 0;
+  margin: 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* .popup {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  background-color: rgba(0, 0, 0, 0.6);z-index: 101;
+  
+}
+
+.popup i{
+  color: var(--main-color);
+  font-size: 24px;
+  position: absolute;
+  right: 5%;
+  top: 5%;
+}
+
+.popup img {
+  width: 30%;
+  position: absolute;
+  inset: 50%;
+  transform: translate(-50%, -50%);
+} 
+
+.our-portfolio .container .portfolio-info .gallery .item:checked .popup{
+  display: block !important;
+} */
+
+.our-portfolio .container .portfolio-info .gallery .item a {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  transform: translateY(100%);
+  transition: transform 0.5s;
+}
+
+.our-portfolio .container .portfolio-info .gallery .item a > i {
+  color: var(--main-color);
+  position: absolute;
+  bottom: 4%;
+  right: 4%;
+  font-size: 24px;
+}
+
+.our-portfolio .container .portfolio-info .gallery .item:hover a {
+  transform: translateY(0);
+}
+
+.our-portfolio .container .portfolio-info .gallery .item img {
+  width: 100%;
+}
 
 /* 
 ============================================================
-                    End Portfolio
+                      End Portfolio
+============================================================
+*/
+
+/* 
+============================================================
+                      Start Counter
+============================================================
+*/
+
+.counter {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+.counter .container .item {
+  float: left;
+  width: calc(95% / 4);
+  font-size: 24px;
+}
+
+.counter .container .item i {
+  color: var(--main-color);
+}
+
+.counter .container .item span {
+  display: block;
+  padding: 15px;
+}
+
+.counter .container .item h5 {
+  color: var(--white-transparent);
+  color: #333;
+}
+
+/* 
+============================================================
+                    End Counter
+============================================================
+*/
+
+/* 
+============================================================
+                    Start Feedback
+============================================================
+*/
+
+.feedback {
+  /* background-color: teal; */
+}
+.feedback .container {
+  width: 50%;
+}
+
+.feedback .container .card {
+  background-color: #f1f1f1;
+  padding: 5%;
+  position: relative;
+  overflow: hidden;
+}
+
+.feedback .container .card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 0px;
+  transform: rotateZ(90deg);
+  border-top: 180px solid transparent;
+  border-left: 180px solid #ff305b;
+}
+
+.feedback .container .card .card-content {
+  position: relative;
+  z-index: 9;
+}
+
+.feedback .container .card .card-content .client-image {
+  float: left;
+  width: 15%;
+  /* border: 5px solid var(--main-color); */
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.feedback .container .card .card-content .client-image img {
+  width: 100%;
+}
+
+.feedback .container .card .card-content .client-info {
+  float: left;
+  width: 80%;
+  padding-left: 25px;
+}
+
+.feedback .container .card .card-content .client-info h2 {
+  color: #333;
+  font-size: 24px;
+  /* margin-bottom: 15px; */
+}
+
+.feedback .container .card .card-content .client-info .from {
+  color: var(--white-transparent);
+  margin: 10px 0;
+}
+
+.feedback .container .card .card-content .client-info p {
+  font-style: italic;
+  color: var(--white-transparent);
+  font-size: 19px;
+  margin-bottom: 10px;
+}
+
+.feedback .container .card .card-content .client-info .starts {
+  color: #f1c30d;
+}
+
+/* 
+============================================================
+                    End Feedback
+============================================================
+*/
+
+/* 
+============================================================
+                    Start Blog
+============================================================
+*/
+
+.blog {
+  background-color: #f1f1f1;
+}
+.blog .container .blog-title h2 {
+  text-align: center;
+}
+
+.blog .container .blog {
+  float: left;
+  width: calc(95% / 3);
+  background-color: var(--white-color);
+  margin: 5px;
+  padding: 8px;
+  border: 1px solid #333;
+  border-radius: 8px;
+}
+
+.blog .container .blog .blog-img-contain {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.blog .container .blog .blog-img-contain img {
+  width: 100%;
+}
+
+.blog .container .blog .blog-img-contain h6 {
+  font-size: 18px;
+  color: var(--white-transparent);
+  padding-top: 8px;
+}
+
+.blog .container .blog .blog-info h2 {
+  padding: 8px 0;
+}
+
+.blog .container .blog .blog-info h2 a {
+  color: #333;
+  transition: color 0.3s ease-in-out;
+}
+
+.blog .container .blog .blog-info h2:hover a {
+  color: var(--main-color);
+}
+
+.blog .container .blog .blog-info p {
+  font-size: 17px;
+  color: #333;
+}
+
+.blog .container .blog .blog-info h6 {
+  padding: 10px 0;
+  text-transform: uppercase;
+  width: fit-content;
+}
+
+.blog .container .blog .blog-info h6:hover a {
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+.blog .container .blog .blog-info h6 a {
+  text-decoration: underline;
+  font-size: 17px;
+  color: #333;
+  transition: color 0.3s, text-decoration 0.3s;
+}
+
+.blog .container .blog .blog-info h6 a > i {
+  font-size: 15px;
+}
+
+/* 
+============================================================
+                    End Blog
 ============================================================
 */
