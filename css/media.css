@@ -9,7 +9,9 @@
     width: 95%;
   }
 
-
+  header nav .container .nav-links {
+    display: none;
+  }
 
   header nav .container input,
   header nav .container label {
@@ -58,8 +60,16 @@
   header .header-content {
     width: 95%;
   }
+
+  header .header-content .content span {
+    font-size: 1rem;
+  }
   header .header-content .content h1 {
     font-size: 2rem;
+  }
+
+  header .header-content .animated p {
+    font-size: 18px;
   }
 }
 
@@ -114,7 +124,8 @@
   }
 
   .about .container .btn a {
-    font-size: 19px;
+    font-size: 17px;
+    padding: 8px;
   }
 }
 
@@ -316,11 +327,11 @@
 
 @media (max-width: 767px) {
   .our-portfolio .container {
-    width: 90%;
+    width: 95%;
   }
 
   .our-portfolio .container .our-portfolio-title ul li {
-    padding: 5px;
+    padding: 2px;
   }
 
   .our-portfolio .container .our-portfolio-title ul li a {
@@ -411,7 +422,7 @@
     width: 100%;
     text-align: center;
   }
-  
+
   .feedback .container .card .card-content .client-info p {
     font-size: 20px;
   }

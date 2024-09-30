@@ -154,7 +154,6 @@ header nav .container {
 
 header nav .container .logo {
   float: left;
-  /* background-color: rebeccapurple; */
   padding: 5px 0;
 }
 
@@ -169,7 +168,6 @@ header nav .container :where(input, label) {
 }
 
 header nav .container .nav-links {
-  /* background-color: blue; */
   float: right;
 }
 
