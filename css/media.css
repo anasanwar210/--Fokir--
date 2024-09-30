@@ -6,7 +6,7 @@
 
 @media (max-width: 1200px) {
   header nav .container {
-    width: 90%;
+    width: 95%;
   }
   header nav .container .nav-links {
     display: none;
@@ -40,7 +40,6 @@
   header nav .container input {
     display: none;
   }
-  
 
   header nav .container .nav-links {
     width: 100%;
@@ -84,7 +83,6 @@
     width: 90%;
   }
 }
-
 
 /* 
   =======================
@@ -131,7 +129,7 @@
   }
 
   .about .container .btn a {
-    font-size: 22px;
+    font-size: 19px;
   }
 }
 
@@ -246,8 +244,6 @@
     padding: 10px;
   }
 
-
-
   .about .container .info {
     float: right;
     padding: 0 8px;
@@ -337,8 +333,16 @@
   .our-portfolio .container {
     width: 90%;
   }
+
+  .our-portfolio .container .our-portfolio-title ul li {
+    padding: 5px;
+  }
+
+  .our-portfolio .container .our-portfolio-title ul li a {
+    font-size: 18px;
+  }
+
   .our-portfolio .container .portfolio-info .gallery .item {
-    /* float: left; */
     width: calc(90% / 1);
   }
 }
@@ -358,7 +362,6 @@
   }
   .our-portfolio .container .portfolio-info .gallery .item {
     width: calc(90% / 3);
-    background-color: red;
   }
 }
 
@@ -421,6 +424,11 @@
 
   .feedback .container .card .card-content .client-info {
     width: 100%;
+    text-align: center;
+  }
+  
+  .feedback .container .card .card-content .client-info p {
+    font-size: 20px;
   }
 }
 
