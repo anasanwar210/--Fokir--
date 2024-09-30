@@ -44,7 +44,7 @@ section.about .container::after,
 }
 
 /* Align Containers */
-section.about .container,
+.about .container,
 .our-services .container,
 .counter .container,
 .feedback .container,
@@ -159,6 +159,10 @@ header nav .container .logo a {
   color: #ff305b;
   font-size: 36px;
   font-weight: 800;
+}
+
+header nav .container :where(input , label) {
+  display: none;
 }
 
 header nav .container .nav-links {
@@ -399,10 +403,10 @@ header .header-content .animated p {
 
 .about .container .info p {
   color: var(--white-transparent);
-  font-size: 18px;
+  font-size: 22px;
   padding: 8px 0 15px;
   border-bottom: 1px dashed rgb(153, 153, 153);
-  line-height: 25px;
+  line-height: 35px;
 }
 
 .about .container .info ul {
@@ -412,7 +416,7 @@ header .header-content .animated p {
 .about .container .info ul li {
   float: left;
   width: 50%;
-  font-size: 18px;
+  font-size: 23px;
   line-height: 40px;
 }
 
@@ -430,13 +434,13 @@ header .header-content .animated p {
   text-decoration: underline;
 }
 .about .container .btn {
-  margin-top: 15px;
+  padding-top: 25px;
 }
 
 .about .container .btn a {
   background-color: var(--main-color);
   color: var(--white-color);
-  font-size: 18px;
+  font-size: 22px;
   padding: 10px 15px;
   border-radius: 8px;
 }
@@ -457,10 +461,6 @@ header .header-content .animated p {
   background-color: #f1f1f1;
   text-align: center;
 }
-
-/* .our-services .container{
-  width: 90%;
-} */
 
 .our-services .container .our-services-info .services {
   float: left;
@@ -610,7 +610,7 @@ header .header-content .animated p {
 .counter .container .item {
   float: left;
   width: calc(95% / 4);
-  font-size: 24px;
+  font-size: 22px;
 }
 
 .counter .container .item i {
@@ -768,7 +768,8 @@ header .header-content .animated p {
 }
 
 .blog .container .blog .blog-info p {
-  font-size: 17px;
+  font-size: 21px;
+  line-height: 25px;
   color: #333;
 }
 
@@ -811,8 +812,6 @@ header .header-content .animated p {
 }
 
 .contact-us .container form {
-  /* background-color: red; */
-  /* border: 1px solid #ff305b; */
   width: 75%;
   margin: auto;
 }
@@ -823,7 +822,7 @@ header .header-content .animated p {
   width: 100%;
   padding: 6px 10px;
   margin: 10px 0;
-  font-size: 17px;
+  font-size: 20px;
   outline: none;
   border: 1px solid #333;
   border-radius: 8px;
@@ -846,7 +845,7 @@ header .header-content .animated p {
 }
 
 .contact-us .container button {
-  font-size: 17px;
+  font-size: 18px;
   padding: 10px 8px;
   border: none;
   border-radius: 5px;

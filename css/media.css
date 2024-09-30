@@ -1,0 +1,520 @@
+/* 
+  =======================
+    Start Header - NavBar
+  =======================
+*/
+
+@media (max-width: 1200px) {
+  header nav .container {
+    width: 90%;
+  }
+  header nav .container .nav-links {
+    display: none;
+  }
+
+  header nav .container .menu {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    display: block;
+  }
+
+  header nav .container .nav-links > .menu li {
+    color: #ff305b;
+    font-size: 35px;
+    cursor: pointer;
+  }
+
+  header nav .container .nav-links > .menu li:first-child {
+    display: block;
+  }
+
+  header nav .container input,
+  header nav .container label {
+    position: absolute;
+    top: 0;
+    right: 10%;
+    padding-top: 10px;
+  }
+
+  header nav .container input {
+    display: none;
+  }
+
+  header nav .container .nav-links {
+    width: 100%;
+    margin: auto;
+    transition: all 0.5s ease-in-out;
+  }
+
+  header nav .container input:checked ~ .nav-links {
+    display: block;
+    padding-top: 50px;
+    text-align: center;
+    margin: auto;
+  }
+
+  header nav .container input:checked ~ .nav-links li {
+    float: none;
+    width: 100%;
+  }
+
+  header nav .container input:checked ~ label {
+    width: 45px;
+    height: 45px;
+  }
+
+  header nav .container label {
+    font-size: 30px;
+    color: #ff305b;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+  }
+
+  header .header-content {
+    width: 90%;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1600px) {
+  header nav .container {
+    width: 90%;
+  }
+}
+
+
+/* 
+  =======================
+    End Header - NavBar
+  =======================
+*/
+/* 
+  =======================
+      Start About
+  =======================
+*/
+
+@media (max-width: 767px) {
+  .about .container {
+    width: 95%;
+  }
+
+  .about .container .img-contain {
+    margin-bottom: 10px;
+  }
+
+  .about .container .img-contain,
+  .about .container .info {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+  }
+  .about .container .img-contain .img-overly {
+    transform: translate(0%, 0%);
+  }
+  .about .container .img-contain .img-overly .overly .social {
+    width: 100%;
+    text-align: center;
+  }
+  .about .container .img-contain .img-overly .overly .social a i {
+    font-size: 40px;
+    margin: 10px 20px;
+  }
+
+  .about .container .info ul li {
+    width: 100% !important;
+    margin-bottom: 10px;
+    font-size: 21px;
+  }
+
+  .about .container .btn a {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .about .container {
+    width: 95%;
+  }
+
+  .about .container .img-contain {
+    float: left;
+    width: 45%;
+    margin-left: 0;
+    border: none;
+    padding: 10px;
+  }
+
+  .about .container .img-contain .img-overly {
+    transform: translate(0%, 0%);
+  }
+
+  .about .container .info {
+    float: right;
+    padding: 0 8px;
+    margin-left: 0;
+  }
+
+  .about .container .info ul {
+    width: 100%;
+  }
+
+  .about .container .info ul li {
+    width: 55%;
+    font-size: 14px;
+    line-height: 25px;
+  }
+  .about .container .info ul li:nth-child(odd) {
+    display: inline-block;
+    width: 45%;
+  }
+
+  .about .container .info p {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 0 15px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .about .container {
+    width: 95%;
+  }
+
+  .about .container .img-contain {
+    float: left;
+    width: 45%;
+    margin-left: 0;
+    border: none;
+    padding: 10px;
+  }
+  .about .container .img-contain .img-overly {
+    transform: translate(0%, 0%);
+  }
+
+  .about .container .info {
+    float: right;
+    padding: 0 8px;
+    margin-left: 0;
+  }
+  .about .container .info ul li {
+    width: 55%;
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .about .container .info ul li:nth-child(odd) {
+    display: inline-block;
+    width: 45%;
+  }
+  .about .container .info p {
+    font-size: 19px;
+    /* font-weight: bold; */
+    padding: 8px 0 15px;
+    line-height: 25px;
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1300px) {
+  .about .container {
+    width: 95%;
+  }
+
+  .about .container .info ul li {
+    width: 55%;
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .about .container .info p {
+    font-size: 19px;
+    padding: 8px 0 15px;
+    line-height: 25px;
+  }
+}
+
+@media (min-width: 1301px) and (max-width: 1690px) {
+  .about .container {
+    width: 95%;
+  }
+  .about .container .img-contain {
+    float: left;
+    width: 40%;
+    margin-left: 0;
+    padding: 10px;
+  }
+
+  .about .container .img-contain .img-overly {
+    height: 500px;
+  }
+
+  .about .container .info {
+    float: right;
+    padding: 0 8px;
+    margin-left: 0;
+    margin-right: 15px;
+  }
+
+  .about .container .info ul li {
+    width: 55%;
+    font-size: 22px;
+    /* background-color: red; */
+    line-height: 40px;
+  }
+  .about .container .info p {
+    font-size: 24px;
+    padding: 8px 0 15px;
+    line-height: 30px;
+  }
+}
+
+/* 
+  =======================
+      End About
+  =======================
+*/
+
+/* 
+  =======================
+      Start Services
+  =======================
+*/
+
+@media (max-width: 767px) {
+  .our-services .container {
+    width: 80%;
+  }
+
+  .our-services .container .our-services-info .services {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .our-services .container {
+    width: 90%;
+  }
+
+  .our-services .container .our-services-info .services {
+    width: calc(100% / 2);
+    margin: 10px 0;
+    /* background-color: red; */
+  }
+}
+
+@media (min-width: 991px) and (max-width: 1200px) {
+  .our-services .container {
+    width: 90%;
+  }
+
+  .our-services .container .our-services-info .services {
+    width: calc(100% / 2);
+    margin: 10px 0;
+    /* background-color: red; */
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1690px) {
+  .our-services .container {
+    width: 90%;
+  }
+}
+
+/* 
+  =======================
+      End Services
+  =======================
+*/
+
+/* 
+  =======================
+      Start Portfolio
+  =======================
+*/
+
+@media (max-width: 767px) {
+  .our-portfolio .container {
+    width: 90%;
+  }
+  .our-portfolio .container .portfolio-info .gallery .item {
+    /* float: left; */
+    width: calc(90% / 1);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .our-portfolio .container {
+    width: 90%;
+  }
+  .our-portfolio .container .portfolio-info .gallery .item {
+    width: calc(90% / 2);
+  }
+}
+
+@media (min-width: 991px) and (max-width: 1380px) {
+  .our-portfolio .container {
+    width: 95%;
+  }
+  .our-portfolio .container .portfolio-info .gallery .item {
+    width: calc(90% / 3);
+    background-color: red;
+  }
+}
+
+/* 
+  =======================
+      End Portfolio
+  =======================
+*/
+
+/* 
+  =======================
+      Start Counter
+  =======================
+*/
+
+@media (max-width: 767px) {
+  .counter .container .item {
+    width: calc(95% / 1);
+    margin: 10px 0;
+    padding: 10px 0;
+    border: 1px solid #ff305b;
+    border-radius: 8px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .counter .container {
+    width: 95%;
+  }
+  .counter .container .item {
+    font-size: 22px;
+  }
+}
+
+/* 
+  =======================
+      End Counter
+  =======================
+*/
+
+/* 
+  =======================
+      Start Feedback
+  =======================
+*/
+
+@media (max-width: 767px) {
+  .feedback .container {
+    width: 90%;
+  }
+  .feedback .container .card {
+    padding: 10px 0;
+  }
+  .feedback .container .card .card-content .client-image {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 25%;
+  }
+
+  .feedback .container .card .card-content .client-info {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1300px) {
+  .feedback .container {
+    width: 90%;
+  }
+}
+
+/* 
+  =======================
+      End Feedback
+  =======================
+*/
+
+/* 
+  =======================
+      Start Blog
+  =======================
+*/
+
+@media (max-width: 767px) {
+  .blog .container {
+    width: 90%;
+  }
+
+  .blog .container .blog {
+    width: calc(100% / 1);
+    margin: 5px 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1300px) {
+  .blog .container {
+    width: 90%;
+  }
+
+  .blog .container .blog .blog-info h2 {
+    font-size: 20px;
+  }
+}
+
+/* 
+  =======================
+      End Blog
+  =======================
+*/
+
+/* 
+  =======================
+      Start Contact-US
+  =======================
+*/
+
+@media (max-width: 767px) {
+  .contact-us .container {
+    width: 90%;
+    /* background-color: #ff305b; */
+  }
+
+  .contact-us .container form {
+    width: 100%;
+  }
+
+  .contact-us .container form .name-email > input {
+    display: block !important;
+    width: 100% !important ;
+  }
+
+  .contact-us .container form .name-email > input:first-child {
+    margin: 0;
+  }
+}
+
+/* 
+  =======================
+      End Contact-US
+  =======================
+*/
+
+/* 
+  =======================
+      Start Footer
+  =======================
+*/
+
+@media (max-width: 767px) {
+  footer .container {
+    width: 90%;
+  }
+}
+
+/* 
+  =======================
+      End Footer
+  =======================
+*/
