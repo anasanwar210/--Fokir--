@@ -8,26 +8,8 @@
   header nav .container {
     width: 95%;
   }
-  header nav .container .nav-links {
-    display: none;
-  }
 
-  header nav .container .menu {
-    position: absolute;
-    top: 5%;
-    right: 5%;
-    display: block;
-  }
 
-  header nav .container .nav-links > .menu li {
-    color: #ff305b;
-    font-size: 35px;
-    cursor: pointer;
-  }
-
-  header nav .container .nav-links > .menu li:first-child {
-    display: block;
-  }
 
   header nav .container input,
   header nav .container label {
@@ -74,7 +56,10 @@
   }
 
   header .header-content {
-    width: 90%;
+    width: 95%;
+  }
+  header .header-content .content h1 {
+    font-size: 2rem;
   }
 }
 
