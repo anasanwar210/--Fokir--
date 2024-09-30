@@ -9,6 +9,10 @@
     width: 95%;
   }
 
+  header nav .container .logo a {
+    font-size: 25px;
+  }
+
   header nav .container .nav-links {
     display: none;
   }
@@ -113,8 +117,8 @@
     text-align: center;
   }
   .about .container .img-contain .img-overly .overly .social a i {
-    font-size: 40px;
-    margin: 10px 20px;
+    font-size: 35px;
+    margin: 10px 5px;
   }
 
   .about .container .info ul li {
@@ -336,6 +340,7 @@
 
   .our-portfolio .container .our-portfolio-title ul li a {
     font-size: 18px;
+    letter-spacing: 0;
   }
 
   .our-portfolio .container .portfolio-info .gallery .item {
@@ -514,6 +519,9 @@
 @media (max-width: 767px) {
   footer .container {
     width: 90%;
+  }
+  footer .container .footer-content .copy-right p {
+    font-size: 13px;
   }
 }
 
