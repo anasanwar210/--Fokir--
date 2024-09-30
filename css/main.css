@@ -67,7 +67,8 @@ footer .container {
 .our-services .container .our-services-title h2,
 .our-portfolio .container .our-portfolio-title h2,
 .blog .container .blog-title h2,
-.contact-us .container .contact-us-title h2 {
+.contact-us .container .contact-us-title h2,
+.feedback .container .our-services-title h2 {
   font-size: 30px;
   font-weight: bold;
   position: relative;
@@ -78,7 +79,8 @@ footer .container {
 .our-services .container .our-services-title h2::after,
 .our-portfolio .container .our-portfolio-title h2::after,
 .blog .container .blog-title h2::after,
-.contact-us .container .contact-us-title h2::after {
+.contact-us .container .contact-us-title h2::after,
+.feedback .container .our-services-title h2::after {
   content: "";
   position: absolute;
   bottom: 16%;
@@ -91,7 +93,8 @@ footer .container {
 .our-services .container .our-services-title h2::before,
 .our-portfolio .container .our-portfolio-title h2::before,
 .blog .container .blog-title h2::before,
-.contact-us .container .contact-us-title h2::before {
+.contact-us .container .contact-us-title h2::before,
+.feedback .container .our-services-title h2::before {
   content: "";
   position: absolute;
   bottom: 8%;
@@ -161,7 +164,7 @@ header nav .container .logo a {
   font-weight: 800;
 }
 
-header nav .container :where(input , label) {
+header nav .container :where(input, label) {
   display: none;
 }
 
@@ -646,6 +649,10 @@ header .header-content .animated p {
   width: 50%;
 }
 
+.feedback .container .our-services-title h2{
+  text-align: center;
+}
+
 .feedback .container .card {
   background-color: #f1f1f1;
   padding: 5%;
@@ -871,6 +878,10 @@ header .header-content .animated p {
 
 footer {
   background-color: #333;
+}
+
+footer .container {
+  padding: 2%;
 }
 
 footer .container .footer-content {
