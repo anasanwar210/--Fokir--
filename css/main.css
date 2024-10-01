@@ -626,6 +626,7 @@ header .header-content .animated p {
 .counter .container .item h5 {
   color: var(--white-transparent);
   color: #333;
+  font-size: 18px !important;
 }
 
 /* 
@@ -758,6 +759,7 @@ header .header-content .animated p {
 
 .blog .container .blog .blog-info h2 {
   padding: 8px 0;
+  font-size: 19px !important;
 }
 
 .blog .container .blog .blog-info h2 a {
@@ -889,7 +891,6 @@ footer .container .footer-content .social {
 
 footer .container .footer-content .social a {
   display: inline-block;
-  vertical-align: baseline;
   width: 45px;
   height: 45px;
   font-size: 24px;

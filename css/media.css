@@ -22,7 +22,7 @@
     position: absolute;
     top: 0;
     right: 10%;
-    padding-top: 10px;
+    padding-top: 5px;
   }
 
   header nav .container input {
@@ -125,6 +125,24 @@
     width: 100% !important;
     margin-bottom: 10px;
     font-size: 21px;
+  }
+
+  .about .container .info h2 {
+    font-size: 23px;
+  }
+
+  .about .container .info p,
+  .about .container .info ul li {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .about .container .info ul {
+    padding: 8px 0;
+  }
+
+  .about .container .btn {
+    padding-top: 8px;
   }
 
   .about .container .btn a {
@@ -339,7 +357,7 @@
   }
 
   .our-portfolio .container .our-portfolio-title ul li a {
-    font-size: 18px;
+    font-size: 15px;
     letter-spacing: 0;
   }
 
@@ -460,15 +478,15 @@
     width: calc(100% / 1);
     margin: 5px 0;
   }
+
+  .blog .container .blog .blog-info p {
+    font-size: 18px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1300px) {
   .blog .container {
     width: 90%;
-  }
-
-  .blog .container .blog .blog-info h2 {
-    font-size: 20px;
   }
 }
 
@@ -499,6 +517,10 @@
     width: 100% !important ;
   }
 
+  .contact-us .container form :where(input, textarea) {
+    font-size: 15px !important;
+  }
+
   .contact-us .container form .name-email > input:first-child {
     margin: 0;
   }
@@ -518,10 +540,21 @@
 
 @media (max-width: 767px) {
   footer .container {
-    width: 90%;
+    width: 95%;
   }
   footer .container .footer-content .copy-right p {
-    font-size: 13px;
+    font-size: 12px;
+  }
+
+  footer .container .footer-content .social {
+    padding: 5px 0;
+  }
+
+  footer .container .footer-content .social a {
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    padding-top: 5px;
   }
 }
 
