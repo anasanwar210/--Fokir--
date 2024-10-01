@@ -323,6 +323,10 @@ header .header-content .animated p {
 ============================================================
 */
 
+.about .container{
+  width: 85%;
+}
+
 .about .container .img-contain {
   float: left;
   width: 30%;

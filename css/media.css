@@ -253,7 +253,7 @@
 
 @media (min-width: 1301px) and (max-width: 1690px) {
   .about .container {
-    width: 80%;
+    width: 95%;
   }
   .about .container .img-contain {
     float: left;
