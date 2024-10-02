@@ -386,7 +386,7 @@
 
 @media (min-width: 991px) and (max-width: 1380px) {
   .our-portfolio .container {
-    width: 95%;
+    width: 80%;
   }
   .our-portfolio .container .portfolio-info .gallery .item {
     width: calc(90% / 3);

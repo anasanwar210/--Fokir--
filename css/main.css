@@ -213,6 +213,8 @@ header .header-content .content h1 {
   color: var(--main-color);
   font-size: 70px;
   text-transform: uppercase;
+  letter-spacing: 5px;
+  word-spacing: -5px;
 }
 
 /* Start Animation */
@@ -225,21 +227,21 @@ header .header-content .animated p {
   /* width: 72%; */
 }
 
-.typewriter {
+header .header-content .animated p > .typewriter {
   position: relative;
 }
 
-.typewriter::after {
+header .header-content .animated p > .typewriter::after {
   content: "";
   position: absolute;
 }
 
-.typewriter::before {
+header .header-content .animated p > .typewriter::before {
   content: "";
   /* position: absolute;
   left: 10px; */
   border-right: 1px solid var(--white-color);
-  animation: blink 0.5s infinite, typing 6s infinite;
+  animation: blink 0.5s infinite, typing 5s infinite;
 }
 
 @keyframes blink {
@@ -325,7 +327,7 @@ header .header-content .animated p {
 */
 
 .about .container {
-  width: 70%;
+  width: 80%;
 }
 
 .about .container .contain {
@@ -793,9 +795,9 @@ header .header-content .animated p {
 }
 
 .blog .container .blog .blog-info p {
-  font-size: 21px;
+  font-size: 19px;
   line-height: 25px;
-  color: #333;
+  color: var(--white-transparent);
 }
 
 .blog .container .blog .blog-info h6 {
